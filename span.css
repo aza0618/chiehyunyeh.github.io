@@ -1,0 +1,11 @@
+#html-element {
+    font-size: 24pt;
+    color: brown;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.red {
+    color: chocolate;
+}
