@@ -1,0 +1,22 @@
+table {
+    /*width: 50%;*/
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-color: slategrey;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px;
+}
+
+th {
+    color: white;
+    background-color: tomato;
+}
+
+td {
+    color: salmon;
+    text-align: center;
+}
