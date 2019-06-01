@@ -6,7 +6,7 @@ $(document).ready(function() {
     var pageCount = 20
     var currentPage = 1
 
-    $.get('https://js.kchen.club/B12345678/query', function(response) {
+    $.get('https://js.kchen.club/B04704075/query', function(response) {
         if (response) {
             if (response.result) {
                 items = response.items

@@ -15,7 +15,7 @@ $(document).ready(function() {
             }
         }
 
-        $.post('https://js.kchen.club/B12345678/insert', data, function(response) {
+        $.post('https://js.kchen.club/B04704075/insert', data, function(response) {
             if (response) {
                 if (response.result) {
                     $('#message').text('新增成功')
