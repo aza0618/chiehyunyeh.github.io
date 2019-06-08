@@ -28,7 +28,7 @@ $(document).ready(function() {
             $titleDiv = $('<div>').attr('class', 'row day py-3').append($Title)
 
             $Type = $('<td>').text("TYPE").attr('class', 'col-2')
-            $Time = $('<td>').text("TIME").attr('class', 'col')
+            $Time = $('<td>').text("TIME").attr('class', 'col-2')
             $Spot = $('<td>').text("SPOT").attr('class', 'col')
             $Note = $('<td>').text("NOTE").attr('class', 'col')
             $Plus = $('<td>').attr('class', 'col-1').attr('value', String(i)).append($('<button>').append($('<i>').attr('class', 'fas fa-plus')))
@@ -95,7 +95,7 @@ $(document).ready(function() {
         $optBoat = $('<option>').text('Ship')
         $optTrans = $('<optgroup>').attr('label', 'Transport').append($optPlane).append($optTrain).append($optBus).append($optMetro).append($optCar).append($optWalk).append($optBoat)
         $optOther = $('<option>').text('Others')
-        $selectOpt = $('<select>').attr('class', 'selectpicker')
+        $selectOpt = $('<select>').attr('class', 'selectpicker ml-3')
         $icon = $('<i>').attr('class', 'fas fa-umbrella-beach select-icon')
         $inputType = $('<td>').attr('class', 'col-2 selectors').append($icon).append($selectOpt.append($optSpot).append($optFood).append($optHotel).append($optTrans).append($optOther))
 
@@ -126,11 +126,11 @@ $(document).ready(function() {
             }
         });
 
-        $fromTime = $('<input>').attr('type', 'time')
-        $toTime = $('<input>').attr('type', 'time')
-        $inputTime = $('<td>').attr('class', 'col').append($fromTime).append($('<p>').text(' - ')).append($toTime)
-        $inputSpot = $('<td>').attr('class', 'col').append($('<input>').attr('placeholder', 'Spot').attr('class', 'w-100'))
-        $inputNote = $('<td>').attr('class', 'col').append($('<input>').attr('placeholder', 'Note').attr('class', 'w-100'))
+        $fromTime = $('<input>').attr('type', 'time').attr('class', 'form-control set-time')
+        $toTime = $('<input>').attr('type', 'time').attr('class', 'form-control set-time')
+        $inputTime = $('<td>').attr('class', 'col-2 px-1 time-block').append($fromTime).append($('<p>').attr('id', 'to').text(' to ')).append($toTime)
+        $inputSpot = $('<td>').attr('class', 'col').append($('<input>').attr('placeholder', ' Spot').attr('class', 'w-100'))
+        $inputNote = $('<td>').attr('class', 'col').attr('id', 'note-area').append($('<textarea>').attr('placeholder', ' Note').attr('class', 'w-100'))
             // $inputCheck = $('<button>').text('check')
 
         $inputDelete = $('<button>').append($('<i>').attr('class', 'fas fa-trash-alt'))

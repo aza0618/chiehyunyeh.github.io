@@ -18,16 +18,16 @@ p {
 }
 
 .title {
-    padding-top: 250px;
+    padding-top: 25%;
 }
 
 .introduction {
-    padding: 10px 0;
+    padding: 1% 0;
 }
 
 .start {
     text-align: center;
-    padding: 130px 0 30px 0;
+    padding: 13% 0 3% 0;
 }
 
 .form-element {
