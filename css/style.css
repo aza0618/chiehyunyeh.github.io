@@ -2108,3 +2108,16 @@ footer p {
 .blog-details-post-wrapper .post-comment form button:hover {
     background: #fff;
 }
+
+.badge{
+    color: white;
+    background-color: #e04f5d;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 100%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
